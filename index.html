@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>webpack and Vue-router minimum pack</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>webpack and Vue-router minimum pack</h1>
+      <hr>
+      <a v-link="{path: '/test1'}">Go to Link1</a>
+      <span class="space"></span>
+      <a v-link="{path: '/test2'}">Go to Link2</a>
+      <hr>
+      <h2>route-view</h2>
+      <router-view></router-view>
+      <hr>
+      <h2>Parent</h2>
+      <p>{{text}}</p>
+      <hr>
+    </div>
+
+    <script src="./dist/js/bundle.js"></script>
+  </body>
+</html>
